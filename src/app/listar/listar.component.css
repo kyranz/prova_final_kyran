@@ -11,6 +11,7 @@
   
   .list-group-item:hover {
     font-weight: 600;
+    font-style: italic;
   }
 
   input {
