@@ -1,0 +1,19 @@
+.container {
+    max-width: 30rem !important;
+    display: flex;
+    flex-direction: column;
+    padding: 0;
+  }
+  
+  .list-group-item {
+    cursor: pointer;
+  }
+  
+  .list-group-item:hover {
+    font-weight: 600;
+  }
+
+  input {
+    max-width: 15rem;
+    margin-bottom: 1rem;
+  }

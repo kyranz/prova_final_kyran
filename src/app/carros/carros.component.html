@@ -1,0 +1,27 @@
+<div class="container my-4">
+    <ul class="list-group">
+        <li class="list-group-item" *ngFor="let carro of carros" (click)="onSelect(carro)">
+            <span class='badge bg-primary'>{{carro.codigo}}</span> - {{carro.modelo}}
+        </li>
+    </ul>
+
+    <div *ngIf="selectedCarro" class="mt-4">
+        <h3>{{selectedCarro.modelo}}</h3>
+
+        <div class="container">
+            <label class="form-label" for="selectedCarro-codigo">Código: </label>
+            <input id="selectedCarro-codigo" class="form-control" [(ngModel)]="selectedCarro.codigo" placeholder="codigo">
+
+            <label class="form-label" for="selectedCarro-modelo">Modelo: </label>
+            <input id="selectedCarro-modelo" class="form-control" [(ngModel)]="selectedCarro.modelo" placeholder="modelo">
+
+            <label class="form-label" for="selectedCarro-preco">Preço: </label>
+            <input id="selectedCarro-preco" class="form-control" [(ngModel)]="selectedCarro.preco" placeholder="preco">
+
+            <label class="form-label" for="selectedCarro-ano_fabr">Ano de fabricação: </label>
+            <input id="selectedCarro-ano_fabr" class="form-control" [(ngModel)]="selectedCarro.ano_fabr" placeholder="ano_fabr">
+        </div>
+    </div>
+</div>
+
+<!-- <h1 (click)="insertCarro(carros[0])">teste</h1> -->
