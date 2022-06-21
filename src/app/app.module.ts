@@ -3,12 +3,16 @@ import { FormsModule } from '@angular/forms';
 import { BrowserModule } from '@angular/platform-browser';
 
 import { AppComponent } from './app.component';
-import { CarrosComponent } from './carros/carros.component';
+import { ListarComponent } from './listar/listar.component';
+import { CadastrarComponent } from './cadastrar/cadastrar.component';
+import { NavbarComponent } from './navbar/navbar.component';
 
 @NgModule({
   declarations: [
     AppComponent,
-    CarrosComponent
+    ListarComponent,
+    CadastrarComponent,
+    NavbarComponent
   ],
   imports: [
     BrowserModule,
