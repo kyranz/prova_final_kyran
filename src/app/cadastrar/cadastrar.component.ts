@@ -1,4 +1,6 @@
 import { Component, OnInit } from '@angular/core';
+import { carro } from '../carros'
+import { ListarComponent } from '../listar/listar.component';
 
 @Component({
   selector: 'app-cadastrar',
@@ -7,9 +9,19 @@ import { Component, OnInit } from '@angular/core';
 })
 export class CadastrarComponent implements OnInit {
 
-  constructor() { }
+  carro: carro = {} as carro;
+
+  constructor(private listar: ListarComponent) { }
 
   ngOnInit(): void {
+  }
+
+  cadastrar(): void {
+    this.listar.Carros.push(this.carro);
+  }
+
+  cancelar(): void {
+    this.carro = {} as carro;
   }
 
 }

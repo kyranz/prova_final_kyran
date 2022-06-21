@@ -1,1 +1,23 @@
-<h1>Componente criado</h1>
+<h1 class="text-center mt-4">Cadastrar carro</h1>
+<form class="container container-principal shadow p-3 mt-4">
+    <div class="form-floating">
+        <input autofocus type="number" name="codigo" class="form-control" id="floatingInputCode" [(ngModel)]="carro.codigo">
+        <label for="floatingInputCode">Código</label>
+    </div>
+    <div class="form-floating mt-2">
+        <input type="text" name="modelo" class="form-control" id="floatingInputModel" [(ngModel)]="carro.modelo">
+        <label for="floatingInputModel">Modelo</label>
+    </div>
+    <div class="form-floating mt-2">
+        <input type="number" name="preco" class="form-control" id="floatingInputPrice" [(ngModel)]="carro.preco">
+        <label for="floatingInputPrice">Preço</label>
+    </div>
+    <div class="form-floating mt-2">
+        <input type="number" name="ano" class="form-control" id="floatingInputYear" [(ngModel)]="carro.ano_fabr">
+        <label for="floatingInputYear">Ano</label>
+    </div>
+    <div class="d-flex gap-2 mt-3">
+        <button type="button" class="btn btn-outline-success" (click)="cadastrar()">Cadastrar</button>
+        <button type="button" class="btn btn-outline-danger" (click)="cancelar()">Cancelar</button> 
+    </div>
+</form>

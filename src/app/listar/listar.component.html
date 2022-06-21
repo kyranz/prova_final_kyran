@@ -1,6 +1,6 @@
 <div class="container my-4">
     <ul class="list-group">
-        <li class="list-group-item" *ngFor="let carro of carros" (click)="onSelect(carro)">
+        <li class="list-group-item" *ngFor="let carro of Carros" (click)="onSelect(carro)">
             <span class='badge bg-primary'>{{carro.codigo}}</span> - {{carro.modelo}}
         </li>
     </ul>

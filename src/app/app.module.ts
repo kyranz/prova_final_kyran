@@ -6,6 +6,7 @@ import { AppComponent } from './app.component';
 import { ListarComponent } from './listar/listar.component';
 import { CadastrarComponent } from './cadastrar/cadastrar.component';
 import { NavbarComponent } from './navbar/navbar.component';
+import { AppRoutingModule } from './app-routing.module';
 
 @NgModule({
   declarations: [
@@ -16,9 +17,10 @@ import { NavbarComponent } from './navbar/navbar.component';
   ],
   imports: [
     BrowserModule,
-    FormsModule
+    FormsModule,
+    AppRoutingModule
   ],
-  providers: [],
+  providers: [ListarComponent],
   bootstrap: [AppComponent]
 })
 export class AppModule { }

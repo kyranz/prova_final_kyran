@@ -11,7 +11,7 @@ export class ListarComponent implements OnInit {
 
   constructor() { }
 
-  carros = carros;
+  Carros = carros;
 
   ngOnInit(): void {
   }
